@@ -1,6 +1,45 @@
+@import "fonts.scss";
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
     box-sizing: border-box;
     background-color: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-inline: 10px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 50px;
+    border-radius: 5% 5% 35% 5%;
+    max-width: 350px;
+    max-height: 275px;
+    width: 100%;
+    height: 100%;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Poppins, sans-serif;
+    color: hsl(0, 1%, 44%);
+    margin-bottom: 15px;
+}
+
+.card__submit {
+    display: flex;
+    justify-content: end;
+}
+
+.card__content {
+    font-family: Poppins-ExtraBoldItalic, sans-serif;
+    font-size: 35px;
 }
